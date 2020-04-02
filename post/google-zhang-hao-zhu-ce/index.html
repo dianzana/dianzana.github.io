@@ -1,0 +1,170 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Google账号注册 | 一点小东西</title>
+<link rel="shortcut icon" href="https://dianzana.github.io/favicon.ico?v=1585797976202">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://dianzana.github.io/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="Google账号注册 | 一点小东西 - Atom Feed" href="https://dianzana.github.io/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="简单点
+如果你的手机号和ip之前没有注册过Google，那么在手机上下载一个chrome浏览器，设置（setting）里面找到登录，创建新账号即可。
+当然，需要搭梯子，建议香港线路，具体方法群里面有了。
+如果提示【此手机号无法用于验证】，反..." />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://dianzana.github.io">
+  <img class="avatar" src="https://dianzana.github.io/images/avatar.png?v=1585797976202" alt="">
+  </a>
+  <h1 class="site-title">
+    一点小东西
+  </h1>
+  <p class="site-description">
+    不知道来干啥的？那你走吧
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              Google账号注册
+            </h2>
+            <div class="post-info">
+              <span>
+                2020-04-02
+              </span>
+              <span>
+                1 min read
+              </span>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content">
+                <p>简单点<br>
+如果你的手机号和ip之前没有注册过Google，那么在手机上下载一个chrome浏览器，设置（setting）里面找到登录，创建新账号即可。<br>
+当然，需要搭梯子，建议香港线路，具体方法群里面有了。</p>
+<p>如果提示【此手机号无法用于验证】，反正就是过不去。<br>
+恭喜你，你的ip已经被谷歌认定有风险了，注册不了，死心吧。</p>
+<p>那么，买账号吧。<br>
+我懒得卖，注册太时间，卖你个APP，顺带一键安装谷歌三件套，免费游戏加速，里面买个谷歌账号大概17块上下。<br>
+如图</p>
+<figure data-type="image" tabindex="1"><img src="https://dianzana.github.io/post-images/1585796442732.jpg" alt="" loading="lazy"></figure>
+<p>啥，在哪找我？<br>
+emmmmm<br>
+不知道你在哪儿看到我的，死心把你😏</p>
+
+              </div>
+              <div class="toc-container">
+                
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+
+        
+
+        <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+  <a class="rss" href="https://dianzana.github.io/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>
